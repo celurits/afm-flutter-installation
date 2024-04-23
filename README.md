@@ -2,6 +2,7 @@
 - [Instalasi](#instalasi)
 - [Konfigurasi](#konfigurasi)
 - [Setting Flutter](#setting-flutter)
+- [Install Emulator](#install-emulator)
 
 ## Instalasi
 1. Download [SDK Flutter](https://docs.flutter.dev/get-started/install)
@@ -57,3 +58,26 @@
     flutter doctor
     ```
 12. Selesai
+
+## Install Emulator
+```
+sdkmanager --list
+```
+```
+sdkmanager "system-images;android-30;google_apis;x86_64"
+```
+```
+sdkmanager --licenses
+```
+```
+avdmanager create avd -n google_api_30 -k "system-images;android-30;google_apis;x86_64"
+```
+```
+cd %ANDROID_HOME%\sdk\emulator
+```
+```
+emulator -avd google_api_30
+```
+```
+flutter devices
+```
