@@ -60,24 +60,33 @@
 12. Selesai
 
 ## Install Emulator
+Lihat device yang bisa diinstall
 ```
 sdkmanager --list
 ```
+Pilih device yang diinginkan, kemudian install
 ```
 sdkmanager "system-images;android-30;google_apis;x86_64"
 ```
+Tambahkan Lisensi
 ```
 sdkmanager --licenses
 ```
+Membuat virtual device
 ```
 avdmanager create avd -n google_api_30 -k "system-images;android-30;google_apis;x86_64"
 ```
+Arahkan ke path emulator
 ```
 cd %ANDROID_HOME%\sdk\emulator
 ```
+Jalankan emulator
 ```
 emulator -avd google_api_30
 ```
+jika muncul error. Pergi ke control panel->program and feature->turn windows feature on or off->Ceklis `virtual machine platform` dan `windows hypervisor platform`
+
+Cek apakah device terdeteksi di flutter
 ```
 flutter devices
 ```
