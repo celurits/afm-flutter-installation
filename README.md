@@ -34,7 +34,7 @@
    untuk step 3-9 pastikan PC/Laptop terkoneksi ke <b>Internet</b><br>
 3. Ketik
    ```
-   sdkmanager platform-tools
+   sdkmanager "platform-tools"
    ```
 4. Ketik
    ```
