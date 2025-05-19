@@ -29,19 +29,22 @@
 2. Install Open JDK<br><br>
    Buka CMD. Ketik:
    ```
+   setx JAVA_HOME C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot
+   ```
+   ```
    java -version
    ```
    untuk melihat versi java yang terinstall<br><br>
    untuk step 3-9 pastikan PC/Laptop terkoneksi ke <b>Internet</b><br>
-3. Ketik
+4. Ketik
    ```
    sdkmanager "platform-tools"
    ```
-4. Ketik
+5. Ketik
    ```
    sdkmanager “platforms;android-30”
    ```
-5. Ketik
+6. Ketik
    ```
    sdkmanager “build-tools;30.0.0”
    ```
